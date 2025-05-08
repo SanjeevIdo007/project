@@ -5,7 +5,7 @@ export const Property = () => {
   return (
     <div>
         <div className=''>
-
+<h1>Property</h1>
         </div>
   </div>
 
