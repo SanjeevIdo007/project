@@ -6,6 +6,7 @@ export const Property = () => {
     <div>
         <div className=''>
 <h1>Property</h1>
+<h1>Test</h1>
         </div>
   </div>
 
