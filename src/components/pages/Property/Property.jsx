@@ -3,55 +3,28 @@ import logo from '../../../assets/images/hero1.jpg'
 
 export const Property = () => {
   return (
-    <div className='flex justify-between' style={{backgroundImage: "url(../../../assets/images/img3.png)"}}>
+    <div> 
+    <section className="relative bg-cover bg-center bg-no-repeat h-[90vh] flex items-center justify-center text-white" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1650&q=80")' }}>
+      <div className="absolute inset-0 bg-[#0A2342]/70"></div>
 
-<section class="bg-[#0A2342] text-white py-20" style={{backgroundImage: "url(../../../assets/images/img3.png)"}}>
-  <div className='mx-auto px-6 md:px-12 items-center'>
-      <div className='w-full'>
-        <h1 className='text-4xl md:text-5xl font-bold leading-tight mb-6'>
-          Find Your Dream Home
+      <div className="relative z-10 max-w-3xl px-4 text-center">
+        <h1 className="text-4xl sm:text-6xl font-extrabold mb-4">
+          Find Your Perfect Space   
         </h1>
-        <p>
-          Explore Premium properties, affordable home in your area.
+        <p className="text-lg sm:text-xl text-gray-200 mb-8">
+          Buy, rent, or sell your dream property effortlessly with us.
         </p>
-        <a>
-          Browse Listings
-        </a>
-      </div>  
-  </div>
-  {/* <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center">
-   
-    <div class="w-full md:w-1/2 mb-10 md:mb-0">
-      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-        Find Your Dream Home
-      </h1>
-      <p class="text-lg mb-8 text-gray-300">
-        Explore premium listings, luxury properties, and affordable homes in your area.
-      </p>
-      <a href="#listings" class="bg-white text-[#0A2342] font-semibold py-3 px-6 rounded-xl shadow hover:bg-gray-100 transition">
-        Browse Listings
-      </a>
-    </div>
-
-    <div class="w-full md:w-1/2">
-      <img src="" alt="Beautiful Property" class="rounded-2xl shadow-lg" />
-    </div>
-  </div> */}
-</section>
-
-        {/* <div className=''>
-            <p>Property</p>
+        <div className="flex justify-center gap-4 flex-wrap">
+          <button className="bg-[#FBBF24] text-[#0A2342] hover:bg-yellow-400 transition-all duration-300 py-3 px-6 rounded font-semibold shadow-lg">
+            Explore Listings
+          </button>
+          <button className="bg-white text-[#0A2342] hover:bg-gray-200 transition-all duration-300 py-3 px-6 rounded font-semibold shadow-lg">
+            Post Your Property
+          </button>
         </div>
-
-        <div className=''>
-            <p>property</p>
-        </div>
-
-        <div className=''>
-            Property3
-        </div> */}
-  </div>
-
+      </div>
+    </section>
+</div>
   )
 }
  
