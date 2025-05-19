@@ -81,7 +81,7 @@ const Rent = () => {
       <section className="py-10 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
           {Properties.map((Property) => (
-            <div key={Property.id} className="border rounded-xl p-4 shadow hover:shadow-xl transition">
+            <div key={Property.id} className="rounded-xl p-4 shadow hover:shadow-xl transition">
               <div className='h-48 bg-gray-200 rounded-lg mb-4 rounded-lg bg-cover bg-center' style={{ backgroundImage: `url(${Property.imageUrl})` }}>     
                 <h3 className='text-xl font-bold'>{Property.title}</h3>
                 <p className='text-gray-600'>{Property.location}</p>

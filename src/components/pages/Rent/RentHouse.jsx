@@ -2,7 +2,9 @@ import React from 'react'
 
 const RentHouse = () => {
   return (
-    <div>RentHouse</div>
+    <div>
+      
+    </div>
   )
 }
 
