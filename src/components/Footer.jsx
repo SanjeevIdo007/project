@@ -2,9 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='text-center items-center flex justify-between'>
+    <div className='text-center items-center flex justify-between bg-[#0A2342]'>
       
-     {/* jksjsd */}
+     
      <div className='pl-6 '> 
         <p className='text-gray-300'>Homes.com</p>
         <p className='text-gray-300'>Banepa,Kavre 449900</p>
