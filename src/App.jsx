@@ -5,10 +5,11 @@ import { BrowserRouter as Router,Link, Route, Routes} from "react-router";
 
 // import of the property pages
 import { Property } from "./components/pages/Property/Property";
-import House from "./components/pages/Property/House";
-import Lands from "./components/pages/Property/Lands";
-import Flats from "./components/pages/Property/Flats";
-import Apartments from "./components/pages/Property/Apartments";
+import SellHouse from "./components/pages/Property/SellHouse";
+import SellLands from "./components/pages/Property/SellLands";
+import SellFlats from "./components/pages/Property/SellFlats";
+import SellApartments from "./components/pages/Property/SellApartments";
+
 
 // import of the rent pages
 import Rent from "./components/pages/Rent/Rent";
@@ -17,12 +18,6 @@ import RentLands from "./components/pages/Rent/RentLands";
 import RentFlats from "./components/pages/Rent/RentFlats";
 import RentApartments from "./components/pages/Rent/RentApartments";
 
-// import of the sell pages
-import Sell from "./components/pages/Sell/Sell";
-import SellHouse from "./components/pages/Sell/SellHouse";
-import SellLands from "./components/pages/Sell/SellLands";
-import SellFlats from "./components/pages/Sell/SellFlats";
-import SellApartments from "./components/pages/Sell/SellApartments";
 
 //import of the Buy pages
 import Buy from "./components/pages/Buy/Buy";
@@ -57,10 +52,11 @@ const App =() =>{
             <Route>
                 {/* property routes starts here */}
                 <Route path="/property" element={<Property/>}/>
-                <Route path="/house" element={<House/>}/>
-                <Route path="/lands" element={<Lands/>}/>
-                <Route path="/flats" element={<Flats/>}/>
-                <Route path="/apartments" element={<Apartments/>}/>
+                <Route path="/sell" element={<Property/>}/>
+                <Route path="/sellhouse" element={<SellHouse/>}/>
+                <Route path="/selllands" element={<SellLands/>}/>
+                <Route path="/sellflats" element={<SellFlats/>}/>
+                <Route path="/sellapartments" element={<SellApartments/>}/>
 
                 {/* Rent routes starts here */}
                 <Route path="/rent" element={<Rent/>}/>
@@ -69,12 +65,7 @@ const App =() =>{
                 <Route path="/rentflats" element={<RentFlats/>}/>
                 <Route path="/rentapartments" element={<RentApartments/>}/>
 
-                {/* Sell routes starts here */}
-                <Route path="/sell" element={<Sell/>}/>
-                <Route path="/sellhouse" element={<SellHouse/>}/>
-                <Route path="/selllands" element={<SellLands/>}/>
-                <Route path="/sellflats" element={<SellFlats/>}/>
-                <Route path="/sellapartments" element={<SellApartments/>}/>
+                
 
               {/* Buy routes starts here */}
               <Route path="/buy" element={<Buy/>}/>
