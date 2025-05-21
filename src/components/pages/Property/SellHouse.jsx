@@ -6,4 +6,5 @@ const SellHouse = () => {
   )
 }
 
-export default SellHouse
+export default SellHouse;
+ 
