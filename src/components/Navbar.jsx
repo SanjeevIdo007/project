@@ -8,23 +8,23 @@ import { FaPlusSquare } from "react-icons/fa";
 const Dropdownlinks1 = [
   {
     id: 1,
-    name: "House",
-    link: "/house",
+    name: "Sell House",
+    link: "/sellhouse",
   },
   {
     id: 2,
-    name: "Lands",
-    link: "/lands",
+    name: "Sell Lands",
+    link: "/selllands",
   },
   {
     id: 3,
-    name: "Flats",
-    link: "/flats",
+    name: "Sell Flats",
+    link: "/sellflats",
   },
   {
     id: 4,
-    name: "Apartments",
-    link: "/apartments",
+    name: "Sell Apartments",
+    link: "/apsellartments",
   },
 ];
 
@@ -54,29 +54,6 @@ const Dropdownlinks2 = [
 const Dropdownlinks3 = [
   {
     id: 1,
-    name: "Sell House",
-    link: "/sellhouse",
-  },
-  {
-    id: 2,
-    name: "Sell Lands",
-    link: "/selllands",
-  },
-  {
-    id: 3,
-    name: "Sell Flats",
-    link: "/sellflats",
-  },
-  {
-    id: 4,
-    name: "Sell Apartments ",
-    link: "/sellapartments",
-  },
-];
-
-const Dropdownlinks4 = [
-  {
-    id: 1,
     name: "Buy House",
     link: "/buyhouse",
   },
@@ -97,7 +74,7 @@ const Dropdownlinks4 = [
   },
 ];
 
-const Dropdownlinks5 = [
+const Dropdownlinks4 = [
   {
     id: 1,
     name: "Shop Spaces",
@@ -120,7 +97,7 @@ const Dropdownlinks5 = [
   },
 ];
 
-const Dropdownlinks6 = [
+const Dropdownlinks5 = [
   {
     id: 1,
     name: "Top Rented",
@@ -236,29 +213,7 @@ const Navbar = () => {
               </div>
             </li>
 
-            {/* Sell DropDown starts*/}
-            <li className="group relative py px-3">
-              <a
-                href="sell"
-                className="flex items-center gap-[2px] py-2 text-[#000000] hover:text-[#0A2342]"
-              >
-                Sell
-              </a>
-              <div className="absolute z-[9999] hidden group-hover:block w-[150px] rounded-md bg-white p-2 text-[#000000] shadow-md">
-                <ul>
-                  {Dropdownlinks3.map((data) => (
-                    <li key={data.id}>
-                      <a
-                        href={data.link}
-                        className="inline-block w-full rounded-md p-2 hover:bg-[#000000]/20"
-                      >
-                        {data.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </li>
+           
 
             {/* Buy DropDown starts */}
             <li className="group relative py px-3">
@@ -270,7 +225,7 @@ const Navbar = () => {
               </a>
               <div className="absolute z-[9999] hidden group-hover:block w-[150px] rounded-md bg-white p-2 text-[#000000] shadow-md">
                 <ul>
-                  {Dropdownlinks4.map((data) => (
+                  {Dropdownlinks3.map((data) => (
                     <li key={data.id}>
                       <a
                         href={data.link}
@@ -294,7 +249,7 @@ const Navbar = () => {
               </a>
               <div className="absolute z-[9999] hidden group-hover:block w-[150px] rounded-md bg-white p-2 text-[#000000] shadow-md">
                 <ul>
-                  {Dropdownlinks5.map((data) => (
+                  {Dropdownlinks4.map((data) => (
                     <li key={data.id}>
                       <a
                         href={data.link}
@@ -321,7 +276,7 @@ const Navbar = () => {
               </a>
               <div className="absolute z-[9999] hidden group-hover:block w-[150px] rounded-md bg-white p-2 text-[#000000] shadow-md">
                 <ul>
-                  {Dropdownlinks6.map((data) => (
+                  {Dropdownlinks5.map((data) => (
                     <li key={data.id}>
                       <a
                         href={data.link}
